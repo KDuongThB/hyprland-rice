@@ -9,3 +9,4 @@ print_command=true
 insensitive=true
 prompt=Search
 columns=2
+normal_window=true
