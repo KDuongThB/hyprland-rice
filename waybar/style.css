@@ -1,0 +1,172 @@
+@import "mocha.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "FiraCode Nerd Font";
+    font-weight: bold;
+    font-size: 12px;
+    min-height: 0;
+}
+
+#waybar {
+    background: transparent;
+    color: @text;
+}
+
+#tooltip {
+    background: @base;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @crust;
+}
+
+#window,
+#clock,
+#battery,
+#cpu,
+#memory,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#taskbar,
+#backlight {
+    background: @base;
+    opacity: 0.8;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border: 1px solid @sky;
+}
+
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: @base;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+#workspaces button {
+    box-shadow: none;
+    text-shadow: none;
+    color: @lavender;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background: none;
+    border: none;
+}
+  
+#workspaces button.active {
+    color: @sky;
+    border-radius: 1rem;
+}
+
+#workspaces button.special {
+    color: @peach;
+    border-radius: 1rem;
+}
+  
+
+
+#window {
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+window#waybar.empty #window {
+    background: none;
+    border: none;
+    transition: none;
+
+}
+
+#taskbar {
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#taskbar:hover {
+    color: @blue
+}
+
+
+#clock {
+    color: @peach;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#network {
+    color: @yellow;
+    border-radius: 10px 0px 0px 10px;
+    border-right: 0px;
+}
+
+#bluetooth {
+    color: @sky;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px
+}
+
+#temperature {
+    color: @pink;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#cpu {
+    color: @rosewater;
+    border-radius: 0px 0px 0px 0px;
+    margin-right: 0px;
+    border-left: 0px;
+}
+
+#memory {
+    color: @lavender;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+    border-left: 0px;
+}
+
+#backlight {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#pulseaudio {
+    color: @blue;
+    border-left: 2px;
+    border-right: 0px;
+}
+
+
+#pulseaudio.microphone {
+    color: @mauve;
+    border-radius: 0px 0px 0px 0px;
+    border-right: @lavender solid 1px;
+}
+
+#battery {
+    color: @green;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+    border-left: 0px;
+}
+
