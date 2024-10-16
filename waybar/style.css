@@ -146,20 +146,19 @@ window#waybar.empty #window {
 
 #pulseaudio {
     color: @blue;
-    border-left: 1px;
-    border-right: 0px;
+    border-right: 0;
 }
 
 
 #pulseaudio.microphone {
     color: @mauve;
     border-radius: 0px 0px 0px 0px;
+    border-left: 0;
 }
 
 #battery {
     color: @green;
     border-radius: 0px;
     margin-right: 5px;
-    border-left: 0px;
 }
 
