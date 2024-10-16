@@ -16,7 +16,7 @@
 
 #tooltip {
     background: @base;
-    border-radius: 10px;
+    border-radius: 0px;
     border-width: 2px;
     border-style: solid;
     border-color: @crust;
@@ -34,24 +34,22 @@
 #workspaces,
 #taskbar,
 #backlight {
-    background: @base;
+    background: @mantle;
     opacity: 0.8;
     padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 10px;
-    border: 1px solid @sky;
+    margin: 0px 0px;
+    margin-top: 5px;
+    border: 1px solid @base;
 }
 
 #tray {
-    border-radius: 10px;
-    margin-right: 10px;
+    border-radius: 0px;
 }
 
 #workspaces {
-    background: @base;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0px;
     padding-left: 5px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 #workspaces button {
@@ -71,20 +69,17 @@
   
 #workspaces button.active {
     color: @sky;
-    border-radius: 1rem;
 }
 
 #workspaces button.special {
     color: @peach;
-    border-radius: 1rem;
 }
   
 
 
 #window {
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    border-radius: 0px;
+    margin-right: 5px;
 }
 
 window#waybar.empty #window {
@@ -95,9 +90,9 @@ window#waybar.empty #window {
 }
 
 #taskbar {
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    border-radius: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #taskbar:hover {
@@ -107,25 +102,24 @@ window#waybar.empty #window {
 
 #clock {
     color: @peach;
-    border-radius: 10px;
-    margin-right: 10px;
+    border-radius: 0px;
 }
 
 #network {
     color: @yellow;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0px;
     border-right: 0px;
 }
 
 #bluetooth {
     color: @sky;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px
+    border-radius: 0px;
+    margin-right: 5px
 }
 
 #temperature {
     color: @pink;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0px;
 }
 
 #temperature.critical {
@@ -141,18 +135,18 @@ window#waybar.empty #window {
 
 #memory {
     color: @lavender;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
+    border-radius: 0px;
+    margin-right: 5px;
     border-left: 0px;
 }
 
 #backlight {
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0px;
 }
 
 #pulseaudio {
     color: @blue;
-    border-left: 2px;
+    border-left: 1px;
     border-right: 0px;
 }
 
@@ -160,13 +154,12 @@ window#waybar.empty #window {
 #pulseaudio.microphone {
     color: @mauve;
     border-radius: 0px 0px 0px 0px;
-    border-right: @lavender solid 1px;
 }
 
 #battery {
     color: @green;
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
+    border-radius: 0px;
+    margin-right: 5px;
     border-left: 0px;
 }
 
